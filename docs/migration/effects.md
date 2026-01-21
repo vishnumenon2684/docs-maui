@@ -41,6 +41,9 @@ internal class FocusRoutingEffect : RoutingEffect
 {
 }
 
+> [!IMPORTANT]
+> In Xamarin.Forms, the `RoutingEffect` constructor accepted a unique ID parameter (e.g., `base("Effects.FocusEffect")`). In .NET MAUI, the `RoutingEffect` constructor does not accept any parameters, so any ID parameter should be removed when migrating from Xamarin.Forms.
+
 #if ANDROID
 internal class FocusPlatformEffect : PlatformEffect
 {

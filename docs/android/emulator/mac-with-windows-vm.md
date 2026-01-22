@@ -18,6 +18,16 @@ There are two main approaches for connecting to an Android emulator on a Mac fro
 
 In both cases, the Android Debug Bridge (ADB) is used to connect to the emulator. ADB is a command-line tool that's bundled with the Android SDK Platform Tools package, that lets you communicate with a device. The `adb` command facilitates a variety of device actions, including connecting to devices. For more information about `adb`, see [Android Debug Bridge (adb)](https://developer.android.com/tools/adb) on developer.android.com.
 
+### Determine the IP address of your Mac
+
+Your Mac may have multiple network adapters (for example, Ethernet, Wi-Fi, or virtual network adapters). To identify the correct IP address to use, open **Terminal** and run the following command:
+
+```zsh
+ifconfig | grep "inet " | grep -v 127.0.0.1
+```
+
+This will display all non-loopback IP addresses. Use the IP address of the network adapter that's accessible from your Windows VM. If your Mac is on a local network, use the private IP address (typically starting with `192.168.`, `10.`, or `172.16.`).
+
 ## Use nc to perform packet forwarding
 
 To connect to the Android Emulator running on a Mac from a Windows VM, by using packet forwarding, use the following steps:

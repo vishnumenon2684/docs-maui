@@ -31,6 +31,24 @@ The `Aspect` property can be set to one of the members of the `Aspect` enumerati
 - `AspectFit` - letterboxes the image (if necessary) so that the entire image fits into the <xref:Microsoft.Maui.Controls.ImageButton>, with blank space added to the top/bottom or sides depending on whether the image is wide or tall. This is the default value of the `Aspect` enumeration.
 - `Center` - centers the image in the <xref:Microsoft.Maui.Controls.ImageButton> while preserving the aspect ratio.
 
+## Size an ImageButton and its image
+
+To control the size of the image displayed in an <xref:Microsoft.Maui.Controls.ImageButton>, use the `Padding` property. The `Padding` property adds space around the image, which effectively controls the available area for the image and its perceived size.
+
+For example:
+
+```xaml
+<ImageButton Source="image.png"
+             WidthRequest="100"
+             HeightRequest="100"
+             Padding="15"
+             Aspect="AspectFit" />
+```
+
+In this example, the button is 100x100 device-independent units. With 15 units of padding on all sides, the image has 70x70 units of available space. The `Aspect` property (described above) determines how the image fills this space.
+
+You can also set `HorizontalOptions` and `VerticalOptions` to control how the button itself is positioned within its parent layout.
+
 In addition, <xref:Microsoft.Maui.Controls.ImageButton> defines `Clicked`, `Pressed`, and `Released` events. The `Clicked` event is raised when an <xref:Microsoft.Maui.Controls.ImageButton> tap with a finger or mouse pointer is released from the button's surface. The `Pressed` event is raised when a finger presses on an <xref:Microsoft.Maui.Controls.ImageButton>, or a mouse button is pressed with the pointer positioned over the <xref:Microsoft.Maui.Controls.ImageButton>. The `Released` event is raised when the finger or mouse button is released. Generally, a `Clicked` event is also raised at the same time as the `Released` event, but if the finger or mouse pointer slides away from the surface of the <xref:Microsoft.Maui.Controls.ImageButton> before being released, the `Clicked` event might not occur.
 
 > [!IMPORTANT]

@@ -192,9 +192,24 @@ To display a local HTML file, add the file to the *Resources\Raw* folder of your
 
 The local HTML file can load Cascading Style Sheets (CSS), JavaScript, and images, if they've also been added to your app project with the **MauiAsset** build action.
 
-For more information about raw assets, see [Raw assets](~/fundamentals/single-project.md#raw-assets).
+Alternatively, you can directly load a local HTML file by setting the `Source` property to a file path:
 
-<!-- Todo: This isn't ideal. You should be able to do <WebView Source="file.html" /> but you can't, as of P13. -->
+```xaml
+<WebView Source="file.html" />
+```
+
+The equivalent C# code is:
+
+```csharp
+WebView webView = new WebView
+{
+    Source = "file.html"
+};
+```
+
+When loading a local HTML file directly, the file must be added to the *Resources\Raw* folder of your app project with the **MauiAsset** build action. The local HTML file can load Cascading Style Sheets (CSS), JavaScript, and images, if they've also been added to your app project with the **MauiAsset** build action.
+
+For more information about raw assets, see [Raw assets](~/fundamentals/single-project.md#raw-assets).
 
 ## Reload content
 

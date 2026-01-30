@@ -18,7 +18,7 @@ Images are represented by the <xref:Microsoft.Maui.Graphics.IImage> type, which 
 An optional <xref:Microsoft.Maui.Graphics.ImageFormat> argument can be specified when loading and saving images. The <xref:Microsoft.Maui.Graphics.ImageFormat> enumeration defines `Png`, `Jpeg`, `Gif`, `Tiff`, and `Bmp` members. However, this argument is only used when the image format is supported by the underlying platform.
 
 > [!NOTE]
-> .NET MAUI contains two different `IImage` interfaces. `Microsoft.Maui.Graphics.IImage` is used for image display, manipulation, and persistence in when displaying graphics in a <xref:Microsoft.Maui.Controls.GraphicsView>. `Microsoft.Maui.IImage` is the interface that abstracts the <xref:Microsoft.Maui.Controls.Image> control.
+> .NET MAUI contains two different `IImage` interfaces. `Microsoft.Maui.Graphics.IImage` is used for image display, manipulation, and persistence when displaying graphics in a <xref:Microsoft.Maui.Controls.GraphicsView>. `Microsoft.Maui.IImage` is the interface that abstracts the <xref:Microsoft.Maui.Controls.Image> control.
 
 ## Load an image
 

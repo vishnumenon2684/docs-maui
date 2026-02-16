@@ -30,6 +30,9 @@ If you're using a .NET MAUI multi-targeted project, your effect code should be c
 
 In .NET MAUI, the <xref:Microsoft.Maui.Controls.RoutingEffect> class is in the `Microsoft.Maui.Controls` namespace. This namespace is one of .NET MAUI's implicit `global using` directives, and so you don't need to add a `using` directive for it. However, the <xref:Microsoft.Maui.Controls.Platform.PlatformEffect> class is in the `Microsoft.Maui.Controls.Platform` namespace, for which you must add a `using` directive.
 
+> [!IMPORTANT]
+> When migrating from Xamarin.Forms, if your `RoutingEffect` class constructor passes an ID parameter to the base constructor (for example, `base($"Effects.{nameof(MyEffect)}")`), **you must remove this parameter in .NET MAUI**. The <xref:Microsoft.Maui.Controls.RoutingEffect> class in .NET MAUI should use a parameterless constructor. Using the base constructor with an ID parameter may cause the effect to not work correctly on Android or other platforms.
+
 The following code example shows a `FocusRoutingEffect` class and its platform implementations combined into a single file:
 
 ```csharp

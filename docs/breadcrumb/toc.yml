@@ -1,0 +1,71 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: .NET
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:
+    - name: .NET MAUI
+      tocHref: /dotnet/maui
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/architecture/maui
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /windows/ai/samples
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /windows/apps/windows-dotnet-maui/tutorial-graph-api
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /windows/apps/windows-dotnet-maui/tutorial-csharp-ui-maui-toolkit
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /azure/developer/mobile-apps/azure-mobile-apps/quickstarts/maui
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /entra
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/building-apps
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/features
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/messages
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/binding-libs/binding-java-libs
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/binding-libs/customizing-bindings
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/binding-libs/msbuild-reference
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/android/binding-libs/advanced-concepts
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/ios/building-apps
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/ios/app-fundamentals
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/ios/app-fundamentals/images-icons
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /dotnet/ios/advanced-concepts
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /aspnet/core/blazor/hybrid
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /aspnet/core/blazor/hybrid/tutorials
+      topicHref: /dotnet/maui/index
+    - name: .NET MAUI
+      tocHref: /aspnet/core/blazor/hybrid/security
+      topicHref: /dotnet/maui/index

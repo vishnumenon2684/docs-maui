@@ -1,0 +1,14 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: devices-platforms
+  title: Devices
+  prompt: Choose your platform
+  pivots:
+    - id: devices-android
+      title: Android
+    - id: devices-ios
+      title: iOS
+    - id: devices-maccatalyst
+      title: Mac Catalyst
+    - id: devices-windows
+      title: Windows
